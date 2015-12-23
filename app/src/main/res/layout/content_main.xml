@@ -12,8 +12,45 @@
     tools:context="com.example.lucindalim.guideapplication.MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="0dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="@string/name"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/city"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/state"/>
+        <TextView
+            android:layout_width="0dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/end_date"/>
+    </LinearLayout>
+
+    <ListView
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:id="@+id/listView"/>
 </RelativeLayout>
